@@ -611,3 +611,4 @@ This is safe but usually unnecessary. `setup()` / `verifyWithHCaptcha()` already
 Listeners persist: `reset()` does not remove them. If your listeners capture an Activity/Fragment, remove them during teardown to avoid leaks: `removeOn...Listener(...)` or `removeAllListeners()`
 
 After a successful solve, the SDK schedules a token timeout callback. Call `HCaptchaTokenResponse.markUsed()` once you've used the token to cancel that timer and prevent a later TOKEN_TIMEOUT callback
+
